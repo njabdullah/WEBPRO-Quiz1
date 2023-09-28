@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah's Personal Profile | Profile Website</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <div class="navbar">
+        <ul class="menu">
+            <li class="nav-item active">
+                <a class="nav-link" href="../quiz1.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="hometown.html">Hometown</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="food.html">Local Food</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tourist.html">Tourist Places</a>
+            </li>
+        </ul>
+    </div>
+    <section class="hometown" id="about">
+        <div class="content">
+            <div class="textBx">
+                <h1>CEPU, CENTRAL JAVA</h1>
+                <p>Cepu is a small city located in Blora Regency, within the province of Central Java. It boasts a rich cultural heritage, with traditions such as the Barongan dance, Jaranan dance, and the presence of the House of Local Ethnic (Samin) contributing to its cultural vibrancy. Despite its charm, Cepu is somewhat distant from metropolitan amenities like shopping malls and cinemas.
+                    <br>
+                    <br>
+                    This city is also blessed with abundant natural resources, notably oil. Cepu is known for its significant oil reserves, making it a prominent area in the region for oil production.</p>
+                </div>
+            <div class="imgBx">
+                <img src="../images/cepu.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Implementation -->
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const navbar = document.querySelector('.navbar');
+            menuToggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

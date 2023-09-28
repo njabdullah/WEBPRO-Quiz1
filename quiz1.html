@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah's Personal Profile | Profile Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <section class="banner" id="home">
+        <div class="homepageImg">
+            <img src="images/bg1.jpeg">
+        </div>
+        <div class="homepageContent">
+            <div>
+                <h4><span>Hi!</span> I'm</h4>
+                <h2>Abdullah Nasih Jasir</h2>
+                <h4>I'm Third Year Undergraduate Informatics Student</h4>
+                <br>
+                <a href="quiz1/profile.html" class="btn">My Profile</a>
+            </div>
+            <ul class="socmed">
+                <li><a href="https://github.com/njabdullah"><img src="images/github.png"></a></li>
+                <li><a href="https://www.linkedin.com/in/abdullahnasihjasir/"><img src="images/linkedin.png"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="navbar">
+        <ul class="menu">
+            <li class="nav-item active">
+                <a class="nav-link" href="quiz1.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="quiz1/profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="quiz1/hometown.html">Hometown</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="quiz1/food.html">Local Food</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="quiz1/tourist.html">Tourist Places</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- JavaScript Implementation -->
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const navbar = document.querySelector('.navbar');
+            menuToggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

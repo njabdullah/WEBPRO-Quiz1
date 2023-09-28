@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah's Personal Profile | Profile Website</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <div class="navbar">
+        <ul class="menu">
+            <li class="nav-item active">
+                <a class="nav-link" href="../quiz1.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="hometown.html">Hometown</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="food.html">Local Food</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tourist.html">Tourist Places</a>
+            </li>
+        </ul>
+    </div>
+    <section class="tourist" id="tourist">
+        <div class="title">
+            <h2>TOURIST PLACES</h2>
+            <br>
+            <p>There are only a few places to visit in Cepu, Central Java, and most of them are natural attractions. Here are some of the top tourist destinations in Cepu:</p>
+        </div>
+        <div class="content">
+            <div class="touristBx">
+                <div class="imgBx">
+                    <img src="../images/locotour.jpeg">
+                </div>
+                <div class="textBx">
+                    <h3>Heritage Loco Tour</h3>
+                </div>
+            </div>
+            <div class="touristBx">
+                <div class="imgBx">
+                    <img src="../images/keratonjipang.jpg">
+                </div>
+                <div class="textBx">
+                    <h3>Keratonan Jipang</h3>
+                </div>
+            </div>
+ 
+        </div>
+    </section>
+
+    <!-- JavaScript Implementation -->
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const navbar = document.querySelector('.navbar');
+            menuToggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
